@@ -1,0 +1,22 @@
+{
+    "name": "spekt08/laravel-search",
+    "description": "A Laravel package for advanced search functionality",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "spekt08\\Search\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "spekt08\\Search\\SearchServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0|^9.0|^10.0"
+    }
+}
