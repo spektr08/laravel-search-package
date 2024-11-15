@@ -3,9 +3,9 @@
 namespace spekt08\Search;
 
 use spekt08\Search\Cases\AttributeCase;
-use spekt08\Search\Search\Cases\CallbackCase;
-use spekt08\Search\Search\Cases\OrderCase;
-use spekt08\Search\Search\Cases\SearchCaseInterface;
+use spekt08\Search\Cases\CallbackCase;
+use spekt08\Search\Cases\OrderCase;
+use spekt08\Search\Cases\SearchCaseInterface;
 
 class SearchService
 {
