@@ -1,6 +1,6 @@
 <?php
 
-namespace spekt08\Search\Search\Cases;
+namespace spekt08\Search\Cases;
 
 
 use Illuminate\Database\Eloquent\Builder;
