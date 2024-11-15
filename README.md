@@ -7,12 +7,12 @@ A Laravel package to provide advanced, modular search functionality using custom
 
 1. **Install the package** via Composer:
    ```bash
-   composer require your-vendor/laravel-search
+   composer require spekt08/laravel-search
    ```
 
 2. **Publish the configuration file** (if applicable):
    ```bash
-   php artisan vendor:publish --provider="YourVendor\Search\SearchServiceProvider" --tag=config
+   php artisan vendor:publish --provider="spekt08\Search\SearchServiceProvider" --tag=config
    ```
 
 ---
@@ -24,7 +24,7 @@ A Laravel package to provide advanced, modular search functionality using custom
 The `SearchService` requires a model to operate on. You can instantiate it as follows:
 
 ```php
-use YourVendor\Search\SearchService;
+use spekt08\Search\SearchService;
 
 $service = app(SearchService::class, [
     'model' => \App\Models\User::class
@@ -40,7 +40,7 @@ Call the `search` method with the desired query parameters. For example:
 ```php
 $queries = [
     'name' => 'John',     // Filter users by name
-    'created_at' => '2023-01-01', // Filter by creation date
+    'created_at' => '2025-01-01', // Filter by creation date
     'order' => 'asc',     // Sort in ascending order
 ];
 
@@ -75,7 +75,7 @@ The package includes three default search cases:
 You can add custom cases by implementing the `SearchCaseInterface`:
 
 ```php
-use YourVendor\Search\Cases\SearchCaseInterface;
+use spekt08\Search\Cases\SearchCaseInterface;
 use Illuminate\Database\Eloquent\Builder;
 
 class CustomCase implements SearchCaseInterface
