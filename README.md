@@ -7,7 +7,7 @@ A Laravel package to provide advanced, modular search functionality using custom
 
 1. **Install the package** via Composer:
    ```bash
-   composer require spekt08/laravel-search
+   composer require spekt08/laravel-search:dev-main
    ```
 
 2. **Publish the configuration file** (if applicable):
